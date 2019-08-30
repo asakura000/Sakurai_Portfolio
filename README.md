@@ -1,4 +1,4 @@
-This repository lists sample code from various projects in HTML/CSS, Java, JavaScript, and C++:
+This repository includes various projects in HTML/CSS, Java, JavaScript, and C++:
 1. Dasmotos: web page
 2. Finance Tree: Java
 3. Mortgage Calculator: Java with GUI
