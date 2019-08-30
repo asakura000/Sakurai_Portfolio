@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane hgap="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" vgap="8.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MortgageCalculatorController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+      <ColumnConstraints hgrow="SOMETIMES" prefWidth="30.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="150.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="Purchase Price" GridPane.rowIndex="1" />
+      <Label text="Down Payment Amount" GridPane.rowIndex="2" />
+      <Label text="Interest rate" GridPane.rowIndex="4" />
+      <Label text="Choose Custom Loan Duration " GridPane.rowIndex="9" />
+      <Label text="Monthly Payment (Custom loan duration)" wrapText="true" GridPane.rowIndex="11" />
+      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#calculateButtonPressed" style="-fx-background-radius: 10;" text="Calculate" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+      <TextField fx:id="purchasePriceTextField" style="-fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <TextField fx:id="downPaymentTextField" style="-fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <TextField fx:id="monthlyPaymentCustomTextField" editable="false" style="-fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+      <TextField fx:id="interestRateTextField" style="-fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <Slider fx:id="loanDurationSlider" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+      <Label text="\$" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+      <Label text="\$" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+      <Label text="\%" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="4" />
+      <Label text="yrs" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="9" />
+      <Label text="Loan Amount " GridPane.rowIndex="3" />
+      <TextField fx:id="loanAmountTextField" editable="false" style="-fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Label text="Monthly Payments for:" GridPane.rowIndex="5" />
+      <Label text="10-Year Loan" GridPane.rowIndex="6" />
+      <Label text="20-Year Loan" GridPane.rowIndex="7" />
+      <Label text="30-Year Loan" GridPane.rowIndex="8" />
+      <TextField fx:id="monthlyPayment10YrTextField" editable="false" style="-fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+      <TextField fx:id="monthlyPayment20YrTextField" editable="false" style="-fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+      <TextField fx:id="monthlyPayment30YrTextField" editable="false" style="-fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@houseIcon.png" />
+         </image>
+      </ImageView>
+      <Label prefHeight="80.0" prefWidth="187.0" text="Welcome to the Mortgage Calculator App!" wrapText="true" GridPane.columnIndex="2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="customLoanDurationTextField" style="-fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+      <Label text="Custom Loan Duration" GridPane.rowIndex="10" />
+      <Label text="yrs" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+   </children>
+   <padding>
+      <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+   </padding>
+</GridPane>
