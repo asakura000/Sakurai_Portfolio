@@ -1,4 +1,4 @@
-This repository includes various projects in HTML/CSS, Java, JavaScript, and C++:
+This repository includes various projects in HTML/CSS, Java, JavaScript, C++, and C#:
 1. Dasmotos: web page
 2. Finance Tree: Java
 3. Mortgage Calculator: Java with GUI
@@ -9,5 +9,6 @@ This repository includes various projects in HTML/CSS, Java, JavaScript, and C++
 8. Buffons Needle: C++ with FLTK graphics
 9. Circle Art: C++ with FLTK graphics
 10. Sudoku Board Manipulator: C++
+11. Scripts I wrote in C# for Unity game engine as part of a collaborative project
 
 
