@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Royal Pirates CTP Homehacks</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+
+</head>
+<body bgcolor= "purple">
+
+	<!--- Header --->
+	<section class="headerContainer">
+		<img id="photo" src="./resources/CTPLogo.jpg" alt="CTP Logo">
+		<h2 id="headerText">The Royal Pirates</h2>
+	</section>
+	
+
+	<!---Page Banner--->
+	<div>
+		<h1>Boredom Detector</h1>
+		<h2>Our project: Use Google API to analyze facial expressions from a webcam to detect degree of boredom.</h2>
+	</div>
+
+	<section class="mainContainer">
+	
+		<div class=webcam>
+			<p id="video">Camera</p>
+			<video id="vid" autoplay></video>
+			<script>
+			navigator.mediaDevices.getUserMedia({
+			video:{
+			min:640,
+			ideal: 1280,
+			max: 1280
+			},
+			height: {
+				min: 480,
+				ideal: 720,
+				max: 720
+			}
+			})
+			.then(stream => {
+			document.getElementById("vid").srcObject = stream;
+			})
+			</script>
+		</div>
+
+		<div class="guage">
+			<p id="guageDescription">Boredom Level</p>
+			<div class="guage__body">
+				<div class="guage__fill"></div>
+				<div class="guage__cover"></div>
+			</div>
+			<p id="message"></p> 
+		</div>
+
+		<script src="./scripts/something.js"></script>
+			
+	</section>
+
+
+		
+</body>
+</html>
